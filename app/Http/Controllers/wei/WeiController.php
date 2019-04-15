@@ -19,9 +19,9 @@ class WeiController extends Controller
         $time=date("Y-m-d H:i:s");
         $str=$time . $content ."\n";
         file_put_contents("logs/wx_event.log",$str,FILE_APPEND);
-       // echo 'SUCCESS';
-        $data = simplexml_load_string($content);
-        var_dump($data);
+        echo 'SUCCESS';
+        // $data = simplexml_load_string($content);
+        // var_dump($data);
     }
     //获取token值
     public function toke(){
