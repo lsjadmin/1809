@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//微信
+Route::get('valid','wei\WeiController@valid');
+Route::any('valid','wei\WeiController@wxEvent');
+//获取token
+Route::get('toke','wei\WeiController@toke');
